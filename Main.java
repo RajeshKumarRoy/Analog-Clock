@@ -1,4 +1,7 @@
-public class Main extends PApplet
+import processing.core.PApplet;
+import processing.core.PConstants;
+
+public class Main extends PApplet implements PConstants
 {
   public Clock c;
 
@@ -21,14 +24,6 @@ public class Main extends PApplet
 
   public static void main(String[] passedArgs)
   {
-    String[] appletArgs = new String[] { "Main" };
-    if (passedArgs != null)
-    {
-      PApplet.main(concat(appletArgs, passedArgs));
-    }
-    else
-    {
-      PApplet.main(appletArgs);
-    }
+    PApplet.main((passedArgs != null) ? concat(new String[] { "Main" }, passedArgs) : PApplet.main(new String[] { "Main" }));
   }
 }
