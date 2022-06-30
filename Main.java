@@ -24,6 +24,6 @@ public class Main extends PApplet implements PConstants
 
   public static void main(String[] passedArgs)
   {
-    PApplet.main((passedArgs != null) ? concat(new String[] { "Main" }, passedArgs) : PApplet.main(new String[] { "Main" }));
+    PApplet.main(concat(new String[] { "Main" }, passedArgs));
   }
 }
