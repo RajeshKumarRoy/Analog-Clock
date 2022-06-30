@@ -1,6 +1,7 @@
 import processing.core.PApplet;
+import processing.core.PConstants;
 
-public class Clock
+public class Clock implements PConstants
 {
   private PApplet p;
   private int x, y, s;
@@ -23,9 +24,9 @@ public class Clock
   
   private void display()
   {
-    p.stroke(#ffffff);
+    p.stroke(0xffffffff);
     p.noFill();
-    p.stroke(#ffffff);
+    p.stroke(0xffffffff);
     p.strokeWeight(3);
     p.ellipse(x, y, s, s);
     p.strokeWeight(2);
